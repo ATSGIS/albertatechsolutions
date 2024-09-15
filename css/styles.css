@@ -1,39 +1,175 @@
-body {
-  font-family: Arial, sans-serif;
+/* General Reset and Body Styling */
+* {
   margin: 0;
   padding: 0;
-  color: #333;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
 header {
-  background-color: #333;
+  background: #333;
   color: #fff;
-  padding: 10px;
+  padding: 10px 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.company-name {
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Banner Section */
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
   text-align: center;
 }
-header img {
-  max-width: 150px;
+
+.banner-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
 }
-nav ul {
+
+.banner-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background: #555;
+}
+
+/* Overview and Services */
+.overview, .services, .contact {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.service {
+  margin-bottom: 20px;
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.social-media-links {
   list-style: none;
   padding: 0;
+  margin-top: 10px;
 }
-nav ul li {
+
+.social-media-links li {
   display: inline;
-  margin-right: 10px;
+  margin: 0 10px;
 }
-nav ul li a {
+
+.social-media-links a {
   color: #fff;
   text-decoration: none;
 }
-main {
-  padding: 20px;
+
+.social-media-links a:hover {
+  text-decoration: underline;
 }
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar ul {
+      flex-direction: column;
+      margin-top: 10px;
+  }
+
+  .navbar ul li {
+      margin: 10px 0;
+  }
+
+  .banner-content h1 {
+      font-size: 28px;
+  }
+
+  .banner-content p {
+      font-size: 16px;
+  }
 }
