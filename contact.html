@@ -3,29 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alberta Tech Solutions - Contact</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Contact - Alberta Tech Solutions</title>
+    <meta name="description" content="Get in touch with Alberta Tech Solutions. Contact us for inquiries, consultations, and support regarding our technology solutions.">
+    <meta name="keywords" content="contact Alberta Tech Solutions, technology solutions contact, tech consulting contact">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Alberta Tech Solutions Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="Alberta Tech Solutions Logo">
+            </div>
+            <h1 class="company-name">Alberta Tech Solutions</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <h1>Contact Us</h1>
-        <p>For inquiries, please reach out to us at:</p>
-        <p>Email: contact@albertatechsolutions.com</p>
-        <p>Phone: +1 (555) 123-4567</p>
+        <section class="contact">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Whether you have questions about our services, need support, or want to schedule a consultation, feel free to reach out to us using the form below.</p>
+            <form action="submit_form.php" method="post" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Alberta Tech Solutions. All rights reserved.</p>
+        <div class="footer-content">
+            <p>Contact us at <a href="mailto:info@albertatechsolutions.com">info@albertatechsolutions.com</a> or call us at 780-906-8765</p>
+            <p>&copy; 2024 Alberta Tech Solutions. All rights reserved.</p>
+            <ul class="social-media-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
