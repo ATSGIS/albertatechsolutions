@@ -327,3 +327,133 @@ nav.main-nav .dropdown-menu a:hover {
             text-align: left; /* Center headings for better presentation */
         }
     </style>
+    /* Ensure the nav container is positioned correctly */
+.main-nav {
+    position: relative; /* Maintain relative positioning */
+    display: flex; /* Use flexbox for better alignment */
+    justify-content: flex-start; /* Align items to the start */
+    align-items: center; /* Center items vertically */
+}
+
+/* Basic reset for the navigation */
+.nav-menu {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+/* Float the menu items to the left */
+.nav-menu li {
+    margin-right: 20px; /* Space between menu items */
+}
+
+/* Optional: Style for the links */
+.nav-menu li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Change text color */
+    padding: 15px; /* Add padding for clickable area */
+    display: block; /* Make the link cover the whole list item */
+}
+
+/* Optional: Hover effect for links */
+.nav-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+}
+
+/* Add some styling to the dropdown menu */
+.dropdown-menu {
+    display: none; /* Initially hide the dropdown */
+    position: absolute; /* Position it absolutely */
+    background-color: #333; /* Background color */
+    z-index: 1; /* Make sure it appears above other elements */
+}
+
+/* Show the dropdown on hover */
+.nav-menu li:hover .dropdown-menu {
+    display: block; /* Show the dropdown */
+}
+
+/* Clear floats after the menu */
+.main-nav::after {
+    content: ""; /* Create a clearfix */
+    display: table; /* Ensure the clearfix works */
+    clear: both; /* Clear floats */
+}
+/* Floating Navigation */
+.header-content {
+    position: fixed; /* Fix the header to the top of the viewport */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    background-color: #007BFF; /* Change to your desired blue color */
+    color: #ffffff; /* Set text color to white for contrast */
+    z-index: 1000; /* Ensure it is above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+/* Main Navigation Styles */
+.main-nav {
+    display: flex; /* Use flexbox for layout */
+}
+
+/* Navigation Menu */
+.nav-menu {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+/* Menu Items */
+.nav-menu li {
+    margin-right: 20px; /* Space between menu items */
+}
+
+/* Links */
+.nav-menu li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ffffff; /* Set link color to white */
+    padding: 15px 20px; /* Padding for clickable area */
+    display: block; /* Block display for full clickable area */
+}
+
+/* Hover Effect */
+.nav-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+}
+
+/* Ensure Content is not Hidden Behind Header */
+body {
+    padding-top: 100px; /* Adjust this value based on your header height */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none; /* Hide by default */
+    position: absolute; /* Position it absolutely */
+    background-color: #fff; /* Match the dropdown background */
+    z-index: 1; /* Above other elements */
+}
+
+/* Show the dropdown on hover */
+.nav-menu li:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+.header-content {
+    position: fixed; /* Fix the header to the top of the viewport */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    background-color: #0056b3; /* Set header background to your specific blue */
+    color: #ffffff; /* Set text color to white for contrast */
+    z-index: 1000; /* Ensure it is above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.main-nav a {
+    color: #ffffff; /* Make sure links are white */
+}
+
+/* Optional: Change link color on hover */
+.main-nav a:hover {
+    color: #e0e0e0; /* Lighten the link color on hover */
+}
