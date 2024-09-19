@@ -1,69 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image/1.1">
     <url>
-        <loc>https://www.albertatechsolutions.com/index.html</loc>
-        <lastmod>2024-09-17</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://www.albertatechsolutions.com/</loc>
+        <lastmod>2024-09-18</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.albertatechsolutions.com/about.html</loc>
-        <lastmod>2024-09-17</lastmod>
-        <changefreq>monthly</changefreq>
+        <lastmod>2024-09-18</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.albertatechsolutions.com/services.html</loc>
-        <lastmod>2024-09-17</lastmod>
-        <changefreq>monthly</changefreq>
+        <lastmod>2024-09-18</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.albertatechsolutions.com/business.html</loc>
-        <lastmod>2024-09-17</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://www.albertatechsolutions.com/residential.html</loc>
-        <lastmod>2024-09-17</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://www.albertatechsolutions.com/it.html</loc>
-        <lastmod>2024-09-17</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
         <loc>https://www.albertatechsolutions.com/portfolio.html</loc>
-        <lastmod>2024-09-17</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <lastmod>2024-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.albertatechsolutions.com/contact.html</loc>
-        <lastmod>2024-09-17</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <lastmod>2024-09-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.albertatechsolutions.com/privacypolicy.html</loc>
-        <lastmod>2024-09-17</lastmod>
-        <changefreq>yearly</changefreq>
+        <lastmod>2024-09-18</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://www.albertatechsolutions.com/terms.html</loc>
-        <lastmod>2024-09-17</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.albertatechsolutions.com/sitemap.xml</loc>
-        <lastmod>2024-09-17</lastmod>
-        <changefreq>yearly</changefreq>
+        <lastmod>2024-09-18</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
 </urlset>
