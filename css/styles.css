@@ -12,8 +12,8 @@ html {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #F8F9FA; /* Light gray background for a professional look */
-    color: #343A40; /* Dark gray for text */
+    background-color: #F8F9FA; /* Light gray background */
+    color: #343A40; /* Dark gray text */
 }
 
 a {
@@ -23,31 +23,29 @@ a {
 
 /* Header and Banner */
 header {
-    background-color: #0056b3; /* Professional navy blue */
+    background-color: #0056b3; /* Navy blue */
     color: #FFFFFF; /* White text */
-    padding: 0;
-    width: 100%;
 }
 
 .banner {
-    background-image: url('images/banner-background.jpg'); /* Path to your image */
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the image */
-    height: 50vh; /* Set the height of the banner */
+    background-image: url('images/banner-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* For overlay */
+    position: relative;
     overflow: hidden;
 }
 
 .banner-overlay {
-    position: absolute; /* Position overlay absolutely */
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,18 +57,18 @@ header {
 }
 
 .banner-text {
-    color: #FFFFFF; /* White text for contrast */
-    font-size: 3rem; /* Font size */
-    animation: blink 1s infinite; /* Blink effect */
-    text-align: center; /* Center text */
+    color: #FFFFFF;
+    font-size: 3rem;
+    animation: blink 1s infinite;
+    text-align: center;
+    will-change: opacity; /* Optimization for animations */
 }
 
 /* Header Content */
 .header-content {
     display: flex;
     align-items: center;
-    padding: 1rem; /* Use rem for padding */
-    width: 100%; /* Make header content full width */
+    padding: 1rem;
 }
 
 .logo-container {
@@ -78,40 +76,37 @@ header {
 }
 
 .logo img {
-    height: auto; /* Maintain aspect ratio */
-    max-height: 120px; /* Logo height increased to 150% */
+    height: auto;
+    max-height: 120px;
 }
 
 .company-name {
-    flex-grow: 1; /* Allow company name to fill available space */
-    font-size: 4rem; /* Increased size for emphasis */
-    font-weight: bold; /* Make text bold */
-    color: #FFFFFF; /* Set company name color to white for contrast */
-    text-align: center; /* Center the company name */
-    margin: 0; /* Remove margins */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), -1px -1px 2px rgba(0, 0, 0, 0.6); /* 3D effect */
+    flex-grow: 1;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), -1px -1px 2px rgba(0, 0, 0, 0.6);
 }
 
 /* Navigation */
 nav.main-nav {
     display: flex;
-    justify-content: flex-end; /* Align menu to the right */
+    justify-content: flex-end;
     align-items: center;
-    height: 100%;
 }
 
 .hamburger {
     cursor: pointer;
-    font-size: 2rem; /* Responsive size */
-    color: #FFFFFF; /* Color of the hamburger icon */
-    display: none; /* Hide by default */
+    font-size: 2rem;
+    color: #FFFFFF;
+    display: none;
 }
 
 .nav-menu {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 nav.main-nav ul {
@@ -125,21 +120,21 @@ nav.main-nav li {
 }
 
 nav.main-nav a {
-    color: #FFFFFF; /* White text for links */
-    padding: 0.75rem; /* Reduced padding by 25% */
+    color: #FFFFFF;
+    padding: 0.75rem;
     display: block;
-    transition: background-color 0.3s; /* Smooth transition */
+    transition: background-color 0.3s;
 }
 
 nav.main-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Light white overlay on hover */
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Dropdown Menu */
 nav.main-nav .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: rgba(240, 248, 255, 0.9); /* Light blue */
+    background-color: rgba(240, 248, 255, 0.9);
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -147,23 +142,13 @@ nav.main-nav .dropdown-menu {
     left: 0;
 }
 
-nav.main-nav .dropdown-menu li {
-    float: none;
-}
-
-nav.main-nav .dropdown-menu a {
-    padding: 0.75rem 1rem; /* Use rem for padding */
-    color: #0056b3; /* Darker blue for dropdown items */
-    list-style-type: none; /* Remove bullets from dropdown */
-}
-
 nav.main-nav li:hover .dropdown-menu {
-    display: block; /* Show dropdown on hover */
+    display: block;
 }
 
 /* Main Content */
 main {
-    padding: 1rem; /* Use rem for padding */
+    padding: 1rem;
 }
 
 .container {
@@ -172,22 +157,22 @@ main {
 }
 
 h1, h2, h3 {
-    color: #4B5563; /* Deep slate gray for headings */
+    color: #4B5563;
 }
 
 ul {
-    padding-left: 1.25rem; /* Use rem for padding */
+    padding-left: 1.25rem;
 }
 
 ul li {
-    margin-bottom: 0.625rem; /* Use rem for spacing */
+    margin-bottom: 0.625rem;
 }
 
 /* Footer */
 footer {
-    background-color: #0056b3; /* Professional navy blue */
-    color: #FFFFFF; /* White text */
-    padding: 1rem; /* Use rem for padding */
+    background-color: #0056b3;
+    color: #FFFFFF;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -204,66 +189,66 @@ footer {
 }
 
 .footer-nav li {
-    margin: 0 0.625rem; /* Use rem for spacing */
+    margin: 0 0.625rem;
 }
 
 .footer-nav a {
-    color: #FFFFFF; /* White text for footer links */
-    padding: 0.625rem; /* Use rem for padding */
+    color: #FFFFFF;
+    padding: 0.625rem;
 }
 
 .footer-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Light white overlay on hover */
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .footer-social a {
-    color: #FFFFFF; /* White social icons */
-    font-size: 1.25rem; /* Responsive size */
-    margin: 0 0.625rem; /* Use rem for spacing */
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    margin: 0 0.625rem;
 }
 
 .footer-social a:hover {
-    color: #E0F7FA; /* Light Cyan on hover */
+    color: #E0F7FA;
 }
 
 .copyright {
-    margin-top: 1.25rem; /* Use rem for spacing */
+    margin-top: 1.25rem;
 }
 
 .btn {
-    background-color: #0056b3; /* Professional navy blue button */
-    color: #FFFFFF; /* White text */
-    padding: 0.625rem 1.25rem; /* Use rem for padding */
+    background-color: #0056b3;
+    color: #FFFFFF;
+    padding: 0.625rem 1.25rem;
     border-radius: 5px;
     text-align: center;
     border: none;
-    transition: background-color 0.3s; /* Smooth transition */
+    transition: background-color 0.3s;
 }
 
 .btn:hover {
-    background-color: #00408a; /* Darker blue on hover */
+    background-color: #00408a;
 }
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .header-content {
-        flex-direction: column; /* Stack header content on smaller screens */
-        align-items: flex-start; /* Align items to the left */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .company-name {
-        text-align: left; /* Keep left alignment */
-        font-size: 3rem; /* Responsive size for smaller screens */
+        text-align: left;
+        font-size: 3rem;
     }
 
     nav.main-nav {
-        justify-content: center; /* Center nav items on smaller screens */
+        justify-content: center;
     }
 }
 
 @media (max-width: 768px) {
     .hamburger {
-        display: block; /* Show hamburger icon on mobile */
+        display: block;
     }
 
     nav.main-nav {
@@ -271,37 +256,61 @@ footer {
         position: absolute;
         top: 100%;
         right: 0;
-        background-color: rgba(0, 86, 179, 0.9); /* Same color as header */
+        background-color: rgba(0, 86, 179, 0.9);
         width: 100%;
         z-index: 1;
-        display: none; /* Hide by default */
+        display: none;
     }
 
     .nav-menu.show {
-        display: flex; /* Show menu when toggled */
-        flex-direction: column; /* Stack vertically */
+        display: flex;
+        flex-direction: column;
     }
 
     .nav-menu li {
-        text-align: center; /* Center align menu items */
+        text-align: center;
     }
 
     nav.main-nav a {
-        padding: 1rem; /* Adjust padding */
-        width: 100%; /* Make nav items full width */
+        padding: 1rem;
+        width: 100%;
     }
 
     .banner-text {
-        font-size: 2rem; /* Responsive font size for smaller screens */
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 480px) {
     .banner-text {
-        font-size: 1.5rem; /* Further decrease font size on very small screens */
+        font-size: 1.5rem;
     }
 
     .company-name {
-        font-size: 2.5rem; /* Decrease size further for very small screens */
+        font-size: 2.5rem;
     }
+}
+nav.main-nav .dropdown-menu {
+    display: none; /* Hide by default */
+    position: absolute;
+    background-color: #ffffff; /* Change to white for better contrast */
+    color: #343A40; /* Dark gray for text */
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 5px; /* Rounded corners for a softer look */
+}
+
+nav.main-nav .dropdown-menu a {
+    padding: 0.75rem 1rem; /* Consistent padding */
+    color: #0056b3; /* Dark blue for links */
+    display: block; /* Make full width clickable */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+nav.main-nav .dropdown-menu a:hover {
+    background-color: rgba(0, 86, 179, 0.1); /* Light blue on hover for better visibility */
+    color: #0056b3; /* Keep text color consistent */
 }
