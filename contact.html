@@ -45,14 +45,84 @@
     <main>
         <div class="container">
             <h1>Contact Us</h1>
-            <p>If you have any questions or would like to learn more about our services, feel free to reach out.</p>
+            <p>We’re here to assist you! Whether you have questions about our services, need technical support, or want to discuss a potential project, don’t hesitate to reach out. Your inquiries are important to us, and we aim to respond promptly.</p>
+            
             <h2>Get in Touch</h2>
-            <p>Phone: <a href="tel:+17809068765">(780) 906-8765</a><br>
-            Email: <a href="mailto:info@albertatechsolutions.com">info@albertatechsolutions.com</a></p>
-            <h2>Location</h2>
-            <p>Edmonton, AB, T5H2W5</p>
+            <p>You can contact us through the following methods:</p>
+            <p><strong>Phone:</strong> <a href="tel:+17809068765">(780) 906-8765</a><br>
+            <strong>Email:</strong> <a href="mailto:info@albertatechsolutions.com">info@albertatechsolutions.com</a></p>
+            
+            <h2>Our Location</h2>
+            <p>We are located in the heart of Edmonton:</p>
+            <address>
+                <strong>Alberta Tech Solutions</strong><br>
+                123 Tech Street,<br>
+                Edmonton, AB, T5H 2W5<br>
+                Canada
+            </address>
+            <p>Feel free to visit our office during business hours or set up an appointment for a more personalized discussion.</p>
+    
+            <h2>Business Hours</h2>
+            <p>We are available to assist you during the following hours:</p>
+            <ul>
+                <li>Monday to Friday: 9:00 AM - 5:00 PM</li>
+                <li>Saturday: 10:00 AM - 3:00 PM</li>
+                <li>Sunday: Closed</li>
+            </ul>
+    
+            <h2>Follow Us on Social Media</h2>
+            <p>Stay connected with us and keep up to date with the latest news, tips, and special offers by following us on our social media channels:</p>
+            <ul>
+                <li><a href="https://facebook.com/albertatechsolutions">Facebook</a></li>
+                <li><a href="https://twitter.com/albertatechsol">Twitter</a></li>
+                <li><a href="https://linkedin.com/company/albertatechsolutions">LinkedIn</a></li>
+                <li><a href="https://instagram.com/albertatechsolutions">Instagram</a></li>
+            </ul>
+    
+            <h2>Request a Quote</h2>
+            <p>If you’re interested in our services, you can also request a quote directly. Please provide us with a brief description of your needs, and we’ll get back to you with a detailed proposal:</p>
+            <form id="quoteRequestForm">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div id="responseMessage"></div>
+        </div>
+            <div>
+    
+            
+    
+             <div>
         </div>
     </main>
+    <script>
+        document.getElementById('quoteRequestForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get form values
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            // Here you can add code to process the data, such as sending it to an API
+            // For now, we'll just display a success message
+            var responseMessage = `Thank you, ${name}! Your message has been received. We'll get back to you at ${email}.`;
+            
+            document.getElementById('responseMessage').innerText = responseMessage;
+            document.getElementById('responseMessage').style.display = 'block';
+
+            // Reset the form
+            this.reset();
+        });
+    </script>
+    
 
     <footer>
         <div class="footer-content">

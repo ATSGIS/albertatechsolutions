@@ -314,3 +314,16 @@ nav.main-nav .dropdown-menu a:hover {
     background-color: rgba(0, 86, 179, 0.1); /* Light blue on hover for better visibility */
     color: #0056b3; /* Keep text color consistent */
 }
+<style>
+        /* Add this CSS for justified alignment */
+        .container {
+            text-align: justify;
+        }
+        .container p, .container ul {
+            text-align: justify; /* Justify paragraphs and lists */
+            margin-bottom: 1em; /* Add some space between elements */
+        }
+        .container h1, .container h2 {
+            text-align: left; /* Center headings for better presentation */
+        }
+    </style>

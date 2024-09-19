@@ -31,3 +31,24 @@ document.querySelectorAll('.main-nav ul li').forEach(item => {
         });
     }
 });
+<script>
+    document.getElementById('quoteRequestForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        var formData = new FormData(this);
+        fetch('submit_form.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('responseMessage').innerHTML = data;
+            document.getElementById('responseMessage').style.display = 'block';
+            this.reset(); // Reset the form fields
+        })
+        .catch(error => {
+            document.getElementById('responseMessage').innerHTML = 'An error occurred. Please try again later.';
+            document.getElementById('responseMessage').style.display = 'block';
+        });
+    });
+</script>
