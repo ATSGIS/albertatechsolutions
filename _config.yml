@@ -69,6 +69,13 @@ keywords:
   - Integrated Technology Solutions
   - IT Infrastructure Services
   - Smart Office Automation
+plugins:
+  - jekyll-sitemap
+
+sitemap:
+  include:
+    - "*.html"  # Include HTML files in the sitemap
+    - "*.xml"   # Include XML files in the sitemap
 
 # Build settings
 markdown: kramdown
