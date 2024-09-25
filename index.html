@@ -1,0 +1,59 @@
+---
+layout: front
+---
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ page.title | escape }} - {{ site.title | escape }}</title>
+    <meta name="description" content="{{ site.description | escape }}">
+    <meta name="keywords" content="{{ site.keywords | join: ', ' }}">
+    <link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/css/main.scss' | relative_url }}">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    {% include nav.html %}
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container text-center">
+            <h1>Welcome to Alberta Tech Solutions</h1>
+            <p>Your premier partner for Smart Home and Commercial Technology Solutions in Edmonton, Alberta.</p>
+            <a href="#services" class="btn btn-primary">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Learn more about what we do and our commitment to providing top-notch technology solutions.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Smart Home Automation</li>
+                <li>Multiroom Audio Systems</li>
+                <li>Custom Home Theater Design</li>
+                <li>IT Support and Maintenance</li>
+                <!-- Add more services as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Alberta Tech Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ '/js/jquery.min.js' | relative_url }}"></script>
+    <script src="{{ '/js/bootstrap.min.js' | relative_url }}"></script>
+</body>
