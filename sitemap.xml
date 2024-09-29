@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>http://albertatechsolutions.com/sitemap.xml</loc>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image/1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap-image/1.1 http://www.sitemaps.org/schemas/sitemap-image/1.1/sitemap-image.xsd">
+
+  <url>
+    <loc>http://www.albertatechsolutions.com/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.albertatechsolutions.com/contact</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://www.albertatechsolutions.com/services</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://www.albertatechsolutions.com/portfolio</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://www.albertatechsolutions.com/home-automation</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://www.albertatechsolutions.com/smart-home-solutions</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://www.albertatechsolutions.com/smart-lighting</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://www.albertatechsolutions.com/smart-security</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://www.albertatechsolutions.com/smart-appliances</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://www.albertatechsolutions.com/smart-thermostats</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://www.albertatechsolutions.com/it-support</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://www.albertatechsolutions.com/business-services</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://www.albertatechsolutions.com/smart-energy</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://www.albertatechsolutions.com/pos-systems</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://www.albertatechsolutions.com/surveillance-security</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
