@@ -8,17 +8,10 @@ body {
   font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif;
 }
 
-main {
-  padding: 20px; /* Adjust padding to fit content */
-  margin: 0 auto; /* Ensure content is centered */
-  overflow-wrap: break-word; /* Prevent words from breaking out of containers */
-  text-align: justify;
-}
-
 hr {
   border-color: #29a5c5;
   border-width: 3px;
-  max-width: 50px;
+  max-width: 900px;
 }
 
 hr.light {
@@ -32,7 +25,7 @@ a {
   color: #29a5c5;
 }
 a:hover, a:focus {
-  color: rgb(32.2142857143, 129.6428571429, 154.7857142857);
+  color: #0a3d50;
 }
 
 h1,
@@ -56,7 +49,7 @@ p {
 
 .bg-dark {
   background-color: #0a3d50;
-  color: white;
+  color: #0a3d50;
 }
 
 .text-faded {
@@ -75,8 +68,182 @@ aside {
   padding: 0;
 }
 
+/* Body and main container styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.main-content {
+  max-width: 900px; /* Control the width for better readability */
+  margin: 0 auto; /* Center the content */
+  padding: 40px 20px; /* Add padding to the sides */
+  font-family: "Arial", sans-serif;
+  color: #333; /* Dark gray for better contrast */
+  line-height: 1.8; /* Improve line spacing for better readability */
+}
+
+/* Image Styling (Ensuring full-width and centered) */
+.main-content img {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove the bottom space */
+  margin: 0 auto; /* Center the image horizontally */
+  padding: 0; /* Remove any padding */
+  object-fit: cover; /* Ensure the image covers the space, if needed */
+}
+
+/* Headings */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  font-family: "Georgia", serif; /* Serif font for headings */
+  color: #0a3d50; /* A dark blue color for headings */
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Heading 1 */
+.main-content h1 {
+  font-size: 2.5em;
+}
+
+/* Heading 2 */
+.main-content h2 {
+  font-size: 2em;
+}
+
+/* Heading 3 */
+.main-content h3 {
+  font-size: 1.5em;
+}
+
+/* Paragraphs */
+.main-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666; /* Light gray for paragraphs */
+  text-align: justify;
+}
+
+/* Lists */
+.main-content ul,
+.main-content ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.main-content li {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Blockquotes */
+.main-content blockquote {
+  font-style: italic;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-left: 5px solid #29a5c5;
+  margin: 20px 0;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Links */
+.main-content a {
+  color: #29a5c5; /* Use your primary theme color */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.main-content a:hover,
+.main-content a:focus {
+  color: #0a3d50; /* Darken on hover */
+}
+
+/* Code Blocks */
+.main-content pre,
+.main-content code {
+  font-family: "Courier New", monospace;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.main-content pre {
+  white-space: pre-wrap; /* Allow code to wrap */
+  word-wrap: break-word; /* Handle long code lines */
+}
+
+/* Inline Code */
+.main-content code {
+  padding: 3px 6px;
+  background-color: #eef0f4;
+  border-radius: 5px;
+  color: #d6336c; /* Use a distinct color */
+}
+
+/* Tables */
+.main-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.main-content table,
+.main-content th,
+.main-content td {
+  border: 1px solid #ddd;
+}
+
+.main-content th,
+.main-content td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Horizontal Rules */
+.main-content hr {
+  border: 0;
+  height: 3px;
+  width: 100%; /* Adjust width */
+  background-color: #29a5c5;
+  margin: 40px 0;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px 10px;
+  }
+  .main-content h1 {
+    font-size: 2em;
+  }
+  .main-content h2 {
+    font-size: 1.75em;
+  }
+  .main-content h3 {
+    font-size: 1.25em;
+  }
+  .main-content p {
+    font-size: 15px;
+  }
+  .main-content pre {
+    font-size: 12px;
+  }
+}
 .navbar-default {
-  background-color: white;
+  background-color: #29a5c5;
   border-color: rgba(10, 61, 80, 0.5);
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   -webkit-transition: all 0.35s;
@@ -90,7 +257,7 @@ aside {
   text-transform: none;
 }
 .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
-  color: rgb(32.2142857143, 129.6428571429, 154.7857142857);
+  color: #0a3d50;
 }
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
@@ -106,16 +273,16 @@ aside {
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
   color: #29a5c5 !important;
-  background-color: transparent;
+  background-color: #29a5c5;
 }
 .navbar-default .nav > li.active > a:hover,
 .navbar-default .nav > li.active > a:focus:hover {
-  background-color: transparent;
+  background-color: #0a3d50;
 }
 @media (min-width: 768px) {
   .navbar-default {
-    background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.3);
+    background-color: #29a5c5;
+    border-color: rgba(10, 61, 80, 0.3);
   }
   .navbar-default .navbar-header .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
@@ -140,7 +307,7 @@ aside {
     font-size: 14px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: rgb(32.2142857143, 129.6428571429, 154.7857142857);
+    color: #0a3d50;
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
@@ -303,8 +470,8 @@ header .header-content .header-content-inner p {
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle .btn-default {
   color: #0a3d50;
-  background-color: rgb(242.25, 242.25, 242.25);
-  border-color: rgb(237.15, 237.15, 237.15);
+  background-color: #0a3d50;
+  border-color: #0a3d50;
 }
 .btn-default:active, .btn-default.active, .open > .dropdown-toggle .btn-default {
   background-image: none;
@@ -328,8 +495,8 @@ header .header-content .header-content-inner p {
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle .btn-primary {
   color: white;
-  background-color: rgb(36.6071428571, 147.3214285714, 175.8928571429);
-  border-color: rgb(34.85, 140.25, 167.45);
+  background-color: #0a3d50;
+  border-color: #0a3d50;
 }
 .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle .btn-primary {
   background-image: none;
